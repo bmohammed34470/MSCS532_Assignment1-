@@ -13,12 +13,8 @@ def insertion_sort_decreasing(arr):
 
     return arr
 
-# Taking array input one element at a time
-arr = []
-n = int(input("Enter the number of elements in the array: "))
-for i in range(n):
-    element = int(input(f"Enter element {i + 1}: "))
-    arr.append(element)
+# Taking array input from the user
+arr = list(map(int, input("Enter the array elements separated by space: ").split()))
 
 sorted_arr = insertion_sort_decreasing(arr)
 print("Sorted array in monotonically decreasing order:", sorted_arr)
